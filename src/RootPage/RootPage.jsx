@@ -1,10 +1,20 @@
 import React from 'react';
+import Sidebar from '../Components/Sidebar/Sidebar';
+import { Outlet } from 'react-router';
 
 const RootPage = () => {
     return (
-        <div>
-            <p>This is the root page.</p>
-        </div>
+        <div className="flex h-screen bg-[#0B1220] text-white">
+      {/* Sidebar */}
+      <div className="w-64 fixed left-0 top-0 h-full">
+        <Sidebar />
+      </div>
+
+      {/* Main Content */}
+      <div className="ml-64 flex-1 bg-[#0b1c41] overflow-y-auto ">
+        <Outlet />
+      </div>
+    </div>
     );
 };
 
