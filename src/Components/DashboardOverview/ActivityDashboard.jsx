@@ -18,7 +18,7 @@ const ActivityDashboard = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-6   text-white font-sans">
       
-      {/* Left Side: Recent Activity */}
+      
       <div className="flex-1 bg-[rgba(17,27,60,1)] p-6 rounded-2xl border border-white/5">
         <h2 className="text-xl font-semibold mb-6">Recent Activity</h2>
         <div className="space-y-4">
@@ -36,7 +36,7 @@ const ActivityDashboard = () => {
         </div>
       </div>
 
-      {/* Right Side: Top Repair Requests */}
+      
       <div className="flex-1 bg-[rgba(17,27,60,1)] p-6 rounded-2xl border border-white/5">
         <h2 className="text-xl font-semibold mb-6">Top Repair Requests</h2>
         <div className="space-y-6">
@@ -46,9 +46,9 @@ const ActivityDashboard = () => {
                 <span className="text-gray-300">{repair.name}</span>
                 <span className="text-gray-400">{repair.count} requests</span>
               </div>
-              {/* Progress Bar Container */}
+              
               <div className="w-full bg-[#1a2b5a] h-2 rounded-full overflow-hidden">
-                {/* Active Progress */}
+            
                 <div 
                   className="h-full bg-cyan-500 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)] transition-all duration-1000"
                   style={{ width: repair.width }}

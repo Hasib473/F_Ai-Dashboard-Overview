@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen text-slate-300 p-6 font-sans">
-      {/* Top Navigation / Filters */}
+      
       <div className="flex flex-wrap gap-4 mb-6 items-center">
         <div className="relative flex-1 max-w-md">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
@@ -28,7 +28,7 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Left Column: Call List */}
+    
         <div className="bg-[rgba(17,27,60,1)] rounded-xl border border-slate-800 py-4">
           <h2 className="text-xl font-semibold mb-4 text-white border-b border-blue-500 p-4">Call List</h2>
           <div className="space-y-3 px-2">
@@ -59,7 +59,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Right Column: Call Details */}
+        
         <div className="bg-[rgba(17,27,60,1)] rounded-xl border border-slate-800 p-6">
           <h2 className="text-xl font-semibold mb-6 border-b p-2.5 border-blue-500 text-white">Call Details</h2>
           
@@ -86,19 +86,19 @@ const Dashboard = () => {
   
   <div className="bg-[#0f172a] rounded-2xl p-6 h-auto space-y-6 text-[15px] border border-slate-800/50 leading-relaxed">
     
-    {/* AI Assistant Block */}
+    
     <div className="space-y-1">
       <div className="text-[#22c55e] font-semibold">AI Assistant:</div>
       <div className="text-slate-200">Thank you for calling UBreakiFix! How can I help you today?</div>
     </div>
 
-    {/* Customer Block */}
+
     <div className="space-y-1">
       <div className="text-[#3b82f6] font-semibold">Customer:</div>
       <div className="text-slate-200">Hi, my iPhone 13 screen is cracked. How much would it cost to repair?</div>
     </div>
 
-    {/* AI Assistant Block */}
+    
     <div className="space-y-1">
       <div className="text-[#22c55e] font-semibold">AI Assistant:</div>
       <div className="text-slate-200">
@@ -107,13 +107,13 @@ const Dashboard = () => {
       </div>
     </div>
 
-    {/* Customer Block */}
+    
     <div className="space-y-1">
       <div className="text-[#3b82f6] font-semibold">Customer:</div>
       <div className="text-slate-200">Yes, please! When are you available?</div>
     </div>
 
-    {/* AI Assistant Block */}
+    
     <div className="space-y-1">
       <div className="text-[#22c55e] font-semibold">AI Assistant:</div>
       <div className="text-slate-200">
@@ -129,7 +129,7 @@ const Dashboard = () => {
   );
 };
 
-// Helper Components
+
 const FilterButton = ({ label }) => (
   <button className="bg-[rgba(17,27,60,1)] border border-slate-800 px-4 py-2 rounded-md flex items-center gap-4 hover:bg-[#1f263d] text-sm">
     {label} <ChevronDown size={14} />

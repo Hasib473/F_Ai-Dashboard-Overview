@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router'; // অথবা আপনার রাউটিং লাইব্রেরি অনুযায়ী
+import { Link } from 'react-router'; 
 
 const ProfileSection = () => {
   const profileData = {
@@ -34,7 +34,6 @@ const ProfileSection = () => {
 
       <h2 className="text-xl font-medium mb-6">Profile Image</h2>
       
-      {/* Avatar and Edit Button Section */}
       <div className="flex items-center gap-6 mb-10">
         <div className="relative">
           <img 
@@ -44,7 +43,6 @@ const ProfileSection = () => {
           />
         </div>
         
-        {/* Edit Profile Button with Link */}
         <Link 
           to="/ediprofile" 
           className="bg-[#253366] hover:bg-[#2d3d7a] text-xs font-semibold px-4 py-2 rounded-lg border border-blue-400/30 transition-all shadow-[0_0_15px_rgba(59,130,246,0.15)]"
@@ -53,7 +51,6 @@ const ProfileSection = () => {
         </Link>
       </div>
 
-      {/* Profile Details List */}
       <div className="space-y-0 max-w-2xl">
         <ProfileField label="Full Name:" value={profileData.fullName} />
         <ProfileField label="Email:" value={profileData.email} />
@@ -64,7 +61,6 @@ const ProfileSection = () => {
   );
 };
 
-// ছোট হেল্পার কম্পোনেন্ট টেক্সট এবং বর্ডারের জন্য
 const ProfileField = ({ label, value, isLast }) => (
   <div className={`flex py-5 ${!isLast ? 'border-b border-gray-700/50' : ''}`}>
     <span className="w-40 font-semibold text-gray-200">{label}</span>

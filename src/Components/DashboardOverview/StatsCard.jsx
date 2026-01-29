@@ -67,14 +67,14 @@ const StatsCards = () => {
           key={i}
          className="relative bg-[rgba(17,27,60,1)] p-6 rounded-xl border border-white/10 shadow-lg text-white"
         >
-          {/* Icon */}
+        
           <div
             className={`absolute top-6 right-6 w-11 h-11 rounded-xl flex items-center justify-center ${item.iconBg}`}
           >
             <item.icon size={20} className="text-white" />
           </div>
 
-          {/* Text */}
+        
           <p className="text-sm text-slate-400">{item.title}</p>
 
           <h2 className="text-[32px] font-normal mt-2">
