@@ -4,7 +4,7 @@ import DashboardHome from "../Pages/DashboadHome/DashboardHome";
 import CallLogsHome from "../Pages/CallLogs/CallLogsHome";
 import AppoinmentHome from "../Pages/Appoinment/AppoinmentHome";
 import SettingsHome from "../Pages/Settings/SettingsHome";
-import EditProfilePage from "../Pages/EditProfilePage";
+import EditProfilePage from "../Pages/Editpages/EditProfilepage";
 
 
 export const router = createBrowserRouter([
@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
         },
 
         {
-            path:'editprofile', Component:EditProfilePage
+            path:'ediprofile', Component : EditProfilePage
         }
     ]
   },

@@ -46,7 +46,7 @@ const ProfileSection = () => {
         
         {/* Edit Profile Button with Link */}
         <Link 
-          to="editprofile" 
+          to="/ediprofile" 
           className="bg-[#253366] hover:bg-[#2d3d7a] text-xs font-semibold px-4 py-2 rounded-lg border border-blue-400/30 transition-all shadow-[0_0_15px_rgba(59,130,246,0.15)]"
         >
           Edit Profile
