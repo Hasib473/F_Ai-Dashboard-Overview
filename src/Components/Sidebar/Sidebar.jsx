@@ -22,7 +22,7 @@ ${isActive
   return (
     <div className="h-full bg-[rgba(17,27,60,1)] p-4 shadow-[6px_0_25px_rgba(0,102,255,0.1)]">
     
-      <div className="text-xl font-bold mb-8 flex justify-center pt-5 items-center gap-2">
+      <div className="text-xl font-bold mb-8 flex justify-center pt-3 items-center gap-2">
         <div className="
         relative flex items-center justify-center 
         w-12 h-12 rounded-[14px] 
@@ -50,15 +50,15 @@ ${isActive
           <Home size={18} /> Dashboard Overview
         </NavLink>
 
-        <NavLink to="/calls" className={linkClass}>
+        <NavLink to="callogs" className={linkClass}>
           <Phone size={18} /> Call Logs
         </NavLink>
 
-        <NavLink to="/appointments" className={linkClass}>
+        <NavLink to="appointment" className={linkClass}>
           <Calendar size={18} /> Appointments
         </NavLink>
 
-        <NavLink to="/settings" className={linkClass}>
+        <NavLink to="settings" className={linkClass}>
           <Settings size={18} /> Settings
         </NavLink>
       </nav>
